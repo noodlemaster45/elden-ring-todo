@@ -12,3 +12,6 @@
   html {
     @apply font-mantinia;
   }
+  .button {
+    cursor: pointer;
+  }

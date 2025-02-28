@@ -1,10 +1,10 @@
 <script setup>
 import navbar from "@/components/navbar.vue"
 import hero from "@/components/hero.vue"
-import Bosses from "./components/Bosses.vue";
+import grids from "./components/Grids.vue";
 </script>
 <template>
   <navbar/>
   <hero/>
-  <Bosses/>
+  <grids/>
 </template>

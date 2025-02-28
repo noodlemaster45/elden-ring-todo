@@ -1,18 +1,20 @@
- [
-    { "id": 1, "name": "Margit, the Fell Omen", "location": "Stormveil Castle", "mandatory": true },
-    { "id": 2, "name": "Godrick the Grafted", "location": "Stormveil Castle", "mandatory": true },
-    { "id": 3, "name": "Rennala, Queen of the Full Moon", "location": "Raya Lucaria Academy", "mandatory": true },
-    { "id": 4, "name": "Radagon of the Golden Order", "location": "Erdtree", "mandatory": true },
-    { "id": 5, "name": "Elden Beast", "location": "Erdtree", "mandatory": true },
-    { "id": 6, "name": "Starscourge Radahn", "location": "Redmane Castle", "mandatory": false },
-    { "id": 7, "name": "Morgott, the Omen King", "location": "Leyndell, Royal Capital", "mandatory": true },
-    { "id": 8, "name": "Mohg, Lord of Blood", "location": "Mohgwyn Palace", "mandatory": false },
-    { "id": 9, "name": "Malenia, Blade of Miquella", "location": "Elphael, Brace of the Haligtree", "mandatory": false },
-    { "id": 10, "name": "Dragonlord Placidusax", "location": "Crumbling Farum Azula", "mandatory": false },
-    { "id": 11, "name": "Fire Giant", "location": "Flame Peak", "mandatory": true },
-    { "id": 12, "name": "Rykard, Lord of Blasphemy", "location": "Volcano Manor", "mandatory": false },
-    { "id": 13, "name": "Godfrey, First Elden Lord", "location": "Erdtree", "mandatory": true },
-    { "id": 14, "name": "Hoarah Loux, Warrior", "location": "Erdtree", "mandatory": true },
-    { "id": 15, "name": "Regal Ancestor Spirit", "location": "Siofra River", "mandatory": false }
-  ]
-
+{
+  "bosses":
+[
+  { "id": 1, "name": "Margit, the Fell Omen", "location": "Stormveil Castle", "mandatory": true, "beaten": true },
+  { "id": 2, "name": "Godrick the Grafted", "location": "Stormveil Castle", "mandatory": true, "beaten": false },
+  { "id": 3, "name": "Rennala, Queen of the Full Moon", "location": "Raya Lucaria Academy", "mandatory": true, "beaten": false },
+  { "id": 4, "name": "Radagon of the Golden Order", "location": "Erdtree", "mandatory": true, "beaten": false },
+  { "id": 5, "name": "Elden Beast", "location": "Erdtree", "mandatory": true, "beaten": false },
+  { "id": 6, "name": "Starscourge Radahn", "location": "Redmane Castle", "mandatory": false, "beaten": false },
+  { "id": 7, "name": "Morgott, the Omen King", "location": "Leyndell, Royal Capital", "mandatory": true, "beaten": false },
+  { "id": 8, "name": "Mohg, Lord of Blood", "location": "Mohgwyn Palace", "mandatory": false, "beaten": false },
+  { "id": 9, "name": "Malenia, Blade of Miquella", "location": "Elphael, Brace of the Haligtree", "mandatory": false, "beaten": false },
+  { "id": 10, "name": "Dragonlord Placidusax", "location": "Crumbling Farum Azula", "mandatory": false, "beaten": false },
+  { "id": 11, "name": "Fire Giant", "location": "Flame Peak", "mandatory": true, "beaten": false },
+  { "id": 12, "name": "Rykard, Lord of Blasphemy", "location": "Volcano Manor", "mandatory": false, "beaten": false },
+  { "id": 13, "name": "Godfrey, First Elden Lord", "location": "Erdtree", "mandatory": true, "beaten": false },
+  { "id": 14, "name": "Hoarah Loux, Warrior", "location": "Erdtree", "mandatory": true, "beaten": false },
+  { "id": 15, "name": "Regal Ancestor Spirit", "location": "Siofra River", "mandatory": false, "beaten": false }
+]
+}
