@@ -105,5 +105,63 @@
       "mandatory": false,
       "beaten": false
     }
+  ],
+  "dungeons": [
+    {
+      "id": "16",
+      "name": "Groveside Cave",
+      "location": "Limgrave",
+      "mandatory": false,
+      "beaten": false
+    },
+    {
+      "id": "17",
+      "name": "Murkwater Catacombs",
+      "location": "Limgrave",
+      "mandatory": false,
+      "beaten": false
+    },
+    {
+      "id": "18",
+      "name": "Tombsward Catacombs",
+      "location": "Weeping Peninsula",
+      "mandatory": false,
+      "beaten": false
+    },
+    {
+      "id": "19",
+      "name": "Black Knife Catacombs",
+      "location": "Altus Plateau",
+      "mandatory": false,
+      "beaten": false
+    },
+    {
+      "id": "20",
+      "name": "Sage's Cave",
+      "location": "Altus Plateau",
+      "mandatory": false,
+      "beaten": false
+    },
+    {
+      "id": "21",
+      "name": "Gaol Cave",
+      "location": "Caelid",
+      "mandatory": false,
+      "beaten": false
+    },
+    {
+      "id": "22",
+      "name": "Sealed Tunnel",
+      "location": "Leyndell, Royal Capital",
+      "mandatory": false,
+      "beaten": false
+    },
+    {
+      "id": "23",
+      "name": "Yelough Anix Tunnel",
+      "location": "Consecrated Snowfield",
+      "mandatory": false,
+      "beaten": false
+    }
   ]
 }
