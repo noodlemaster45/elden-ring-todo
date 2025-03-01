@@ -2,6 +2,8 @@
 import card from "@/components/Card.vue"
 import { defineProps, ref } from "vue";
 import axios from "axios";
+import { useRoute } from "vue-router";
+const route = useRoute();
 const props = defineProps({
     boss: Object
 });   
@@ -9,7 +11,7 @@ const scrollY = ref(0);
 const setBeaten = async (boss) =>{
 try {
     boss.beaten = true;
-    await axios.patch(`http://localhost:3000/bosses/${boss.id}`,boss),{
+    await axios.patch(`http://localhost:3000${route.path}/${boss.id}`,boss),{
         headers: { "Content-Type": "application/json" }
     };
     nextTick(() => window.scrollTo(0, scrollY.value));
