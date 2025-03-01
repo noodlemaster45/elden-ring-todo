@@ -1,10 +1,8 @@
 <script setup>
 import navbar from "@/components/navbar.vue"
-import hero from "@/components/hero.vue"
-import grids from "./components/Grids.vue";
+import { RouterView } from "vue-router";
 </script>
 <template>
   <navbar/>
-  <hero/>
-  <grids/>
+  <RouterView/>
 </template>
