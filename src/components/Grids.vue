@@ -4,16 +4,15 @@ import { useRoute } from "vue-router";
 import Boss from "@/components/Boss.vue"
 import { ref, onMounted, watch } from "vue";
 import axios from "axios";
-const bosses = ref([]);
+const data = ref([]);
 const route = useRoute();
 const resetBeaten = async () => {
     try {
-        const resetBosses = bosses.value.map(boss => ({ ...boss, beaten: false }));
+        const resetBosses = data.value.map(boss => ({ ...boss, beaten: false }));
         await Promise.all(resetBosses.map(boss =>
             axios.put(`http://localhost:3000${route.path}/${boss.id}`, boss)
         ));
-        bosses.value = resetBosses;
-        console.log("All bosses reset to unbeaten.");
+        data.value = resetBosses;
     } catch (error) {
         console.error("Error resetting bosses:", error);
     }
@@ -26,7 +25,7 @@ const fetchData = async () => {
                 "Access-Control-Allow-Origin": "*"
             }
         });
-        bosses.value = response.data;
+        data.value = response.data;
     } catch (error) {
         console.error('you dumb dumb');
     }
@@ -45,7 +44,7 @@ watch(() => route.path, () => {
         Reset
     </a>
     <div class="grid grid-cols-3 gap-5 bg-gray-100">
-        <Boss v-for="boss in bosses" :key="boss.id" :boss="boss">
+        <Boss v-for="item in data" :key="item.id" :item="item">
         </Boss>
     </div>
 </template>

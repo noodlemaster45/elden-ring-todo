@@ -19,7 +19,7 @@
       "name": "Rennala, Queen of the Full Moon",
       "location": "Raya Lucaria Academy",
       "mandatory": true,
-      "beaten": true
+      "beaten": false
     },
     {
       "id": "4",
@@ -126,7 +126,7 @@
       "name": "Tombsward Catacombs",
       "location": "Weeping Peninsula",
       "mandatory": false,
-      "beaten": true
+      "beaten": false
     },
     {
       "id": "19",
