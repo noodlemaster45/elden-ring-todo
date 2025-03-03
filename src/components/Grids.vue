@@ -43,10 +43,10 @@ watch(() => route.path, () => {
         class="inline-block bg-black text-white rounded-lg px-4 py-2 hover:bg-gray-700 button">
         Reset
     </a>
-    <a v-on:click.prevent="addItem()"
+    <RouterLink to="/add"
         class="inline-block bg-black text-white rounded-lg px-4 py-2 hover:bg-gray-700 button">
         Add
-    </a>
+    </RouterLink>
     <div class="grid grid-cols-3 gap-5 bg-gray-100">
         <CardGrid v-for="item in data" :key="item.id" :item="item">
         </CardGrid>
