@@ -2,7 +2,7 @@
 import bossesData from "@/bosses.json";
 import { useRoute } from "vue-router";
 import Boss from "@/components/Boss.vue"
-import { ref, onMounted } from "vue";
+import { ref, onMounted, watch } from "vue";
 import axios from "axios";
 const bosses = ref([]);
 const route = useRoute();
@@ -18,7 +18,7 @@ const resetBeaten = async () => {
         console.error("Error resetting bosses:", error);
     }
 }
-onMounted(async () => {
+const fetchData = async () => {
     try {
 
         const response = await axios.get(`http://localhost:3000${route.path}`, {
@@ -31,7 +31,13 @@ onMounted(async () => {
         console.error('you dumb dumb');
     }
 }
+onMounted(async () => {
+    fetchData();
+}
 )
+watch(() => route.path, () => {
+    fetchData();
+}, { immediate: true });
 </script>
 <template>
     <a v-on:click.prevent="resetBeaten(boss)"
