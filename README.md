@@ -28,3 +28,6 @@ npm run server
 ```sh
 npm run build
 ```
+
+### Rename json-server template.json to items.json 
+
