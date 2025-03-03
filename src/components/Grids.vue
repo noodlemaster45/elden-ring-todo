@@ -1,7 +1,7 @@
 <script setup>
-import bossesData from "@/bosses.json";
+import itemsData from "@/items.json";
 import { useRoute } from "vue-router";
-import Boss from "@/components/Boss.vue"
+import CardGrid from "@/components/CardGrid.vue"
 import { ref, onMounted, watch } from "vue";
 import axios from "axios";
 const data = ref([]);
@@ -43,8 +43,12 @@ watch(() => route.path, () => {
         class="inline-block bg-black text-white rounded-lg px-4 py-2 hover:bg-gray-700 button">
         Reset
     </a>
+    <a v-on:click.prevent="addItem()"
+        class="inline-block bg-black text-white rounded-lg px-4 py-2 hover:bg-gray-700 button">
+        Add
+    </a>
     <div class="grid grid-cols-3 gap-5 bg-gray-100">
-        <Boss v-for="item in data" :key="item.id" :item="item">
-        </Boss>
+        <CardGrid v-for="item in data" :key="item.id" :item="item">
+        </CardGrid>
     </div>
 </template>

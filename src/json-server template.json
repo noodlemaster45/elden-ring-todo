@@ -5,14 +5,14 @@
       "name": "Margit, the Fell Omen",
       "location": "Stormveil Castle",
       "mandatory": true,
-      "beaten": false
+      "beaten": true
     },
     {
       "id": "2",
       "name": "Godrick the Grafted",
       "location": "Stormveil Castle",
       "mandatory": true,
-      "beaten": false
+      "beaten": true
     },
     {
       "id": "3",
@@ -112,7 +112,7 @@
       "name": "Groveside Cave",
       "location": "Limgrave",
       "mandatory": false,
-      "beaten": false
+      "beaten": true
     },
     {
       "id": "17",
@@ -126,7 +126,7 @@
       "name": "Tombsward Catacombs",
       "location": "Weeping Peninsula",
       "mandatory": false,
-      "beaten": false
+      "beaten": true
     },
     {
       "id": "19",

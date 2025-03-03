@@ -28,7 +28,10 @@ try {
             {{ item.location }}
         </p>
         <a v-if="!item.beaten" v-on:click.prevent="setBeaten(item)" class="inline-block bg-black text-white rounded-lg px-4 py-2 hover:bg-gray-700 button">
-            Felled
+            Clear
         </a>
+        <p v-else>
+            Enemy Felled
+        </p>
     </card>
 </template>
